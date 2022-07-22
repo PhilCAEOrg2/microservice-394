@@ -89,6 +89,49 @@ public class Res extends RESTService {
 
       /**
    * 
+   * getexample
+   *
+   * 
+   *
+   * 
+   * @return Response 
+   * 
+   */
+  @GET
+  @Path("/example")
+  @Produces(MediaType.APPLICATION_JSON)
+  @Consumes(MediaType.TEXT_PLAIN)
+  @ApiResponses(value = {
+       @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "res")
+  })
+  @ApiOperation(value = "getexample", notes = " ")
+  public Response getexample() {
+
+
+
+
+     
+    // service method invocations
+
+     
+
+
+
+
+    // res
+    boolean res_condition = true;
+    if(res_condition) {
+      JSONObject res = new JSONObject();
+
+      
+
+      return Response.status(HttpURLConnection.HTTP_OK).entity(res.toJSONString()).build();
+    }
+    return null;
+  }
+
+  /**
+   * 
    * gettest
    *
    * 
@@ -170,6 +213,49 @@ public class Res extends RESTService {
       
 
       return Response.status(HttpURLConnection.HTTP_CREATED).entity(created.toJSONString()).build();
+    }
+    return null;
+  }
+
+  /**
+   * 
+   * postexample
+   *
+   * 
+   *
+   * 
+   * @return Response 
+   * 
+   */
+  @POST
+  @Path("/example")
+  @Produces(MediaType.APPLICATION_JSON)
+  @Consumes(MediaType.TEXT_PLAIN)
+  @ApiResponses(value = {
+       @ApiResponse(code = HttpURLConnection.HTTP_CREATED, message = "res")
+  })
+  @ApiOperation(value = "postexample", notes = " ")
+  public Response postexample() {
+
+
+
+
+     
+    // service method invocations
+
+     
+
+
+
+
+    // res
+    boolean res_condition = true;
+    if(res_condition) {
+      JSONObject  = new JSONObject();
+
+      
+
+      return Response.status(HttpURLConnection.HTTP_CREATED).entity(.toJSONString()).build();
     }
     return null;
   }
