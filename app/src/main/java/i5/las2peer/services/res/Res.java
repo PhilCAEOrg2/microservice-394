@@ -130,6 +130,50 @@ public class Res extends RESTService {
     return null;
   }
 
+  /**
+   * 
+   * postDish
+   *
+   * 
+   * @param body  a JSONObject
+   * 
+   * @return Response 
+   * 
+   */
+  @POST
+  @Path("/dish")
+  @Produces(MediaType.APPLICATION_JSON)
+  @Consumes(MediaType.APPLICATION_JSON)
+  @ApiResponses(value = {
+       @ApiResponse(code = HttpURLConnection.HTTP_CREATED, message = "created")
+  })
+  @ApiOperation(value = "postDish", notes = " ")
+  public Response postDish(String body) {
+    JSONObject body_JSON = (JSONObject) JSONValue.parse(body);
+
+
+
+
+     
+    // service method invocations
+
+     
+
+
+
+
+    // created
+    boolean created_condition = true;
+    if(created_condition) {
+      JSONObject created = new JSONObject();
+
+      
+
+      return Response.status(HttpURLConnection.HTTP_CREATED).entity(created.toJSONString()).build();
+    }
+    return null;
+  }
+
 
 
   }
